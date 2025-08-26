@@ -211,7 +211,7 @@ class _HomeScreenState extends State<HomeScreen> {
             context,
             MaterialPageRoute(
               builder: (context) => ChatScreen(
-                name: data['Name'], 
+                name: data['Name'],
                 username: data['username'],
                 profileUrl: data['Image'],
               ),
@@ -230,7 +230,7 @@ class _HomeScreenState extends State<HomeScreen> {
               style:
                   TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
             ),
-            
+
             // subtitle: Text("Hey, how are you?"),
           ),
         ),

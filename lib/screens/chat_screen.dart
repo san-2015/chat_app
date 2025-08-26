@@ -8,7 +8,10 @@ import 'package:random_string/random_string.dart';
 class ChatScreen extends StatefulWidget {
   String name, profileUrl, username;
   ChatScreen(
-      {required this.name, required this.profileUrl, required this.username});
+      {super.key,
+      required this.name,
+      required this.profileUrl,
+      required this.username});
   @override
   _ChatScreenState createState() => _ChatScreenState();
 }

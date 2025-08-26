@@ -31,7 +31,6 @@ class _OnboardingState extends State<Onboarding> {
               },
               child: Material(
                 elevation: 3,
-
                 child: Container(
                     width: double.infinity,
                     height: 45,
