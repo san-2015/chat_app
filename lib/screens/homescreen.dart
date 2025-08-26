@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
     var capitalizeValue =
         value.substring(0, 1).toUpperCase() + value.substring(1);
     if (queryResultSet.isEmpty && value.length == 1) {
-      DatabaseMethods().Search(value).then((QuerySnapshot docs) {
+      DatabaseMethods().search(value).then((QuerySnapshot docs) {
         for (int i = 0; i < docs.docs.length; ++i) {
           queryResultSet.add(docs.docs[i].data());
         }
